@@ -1,0 +1,149 @@
+*{
+    list-style:none;
+    text-decoration:none;
+    border-collapse:collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+.header{
+    display:flex;
+    width:100%;
+    height:100px;
+    margin:auto;
+    background:rgb(219, 27, 50);
+
+}
+.logo{
+    width:300px;
+    height: 40px;
+    margin-left:200px;
+    margin-top:25px;;
+    font-size:40px;
+    color:white;
+}
+.nav{
+    display:flex;
+    margin-left: 400px;
+}
+.nav>li{
+    margin-top: 25px;
+    height:50px;
+    width:150px;
+    text-align: center;
+    line-height:50px;
+    background-color: rgb(219, 27, 50);
+    border-radius: 0.5em;
+    border:1px solid white;
+    margin-left:20px;
+}
+#s{
+    background-color: rgb(234, 94, 25);
+}
+.nav> li > a{
+    color:white;
+    font-size: 20px;  
+}
+#s2{
+    position: relative;
+    font-size:20px;
+    color: white;
+    line-height:90px;
+    left:60px;
+}
+.member{
+    width: 400px;
+    /* border: 1px solid #000; */
+    margin: auto; /*중앙 정렬*/
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+small{
+    color:#ed1257;
+}
+.member .logo{
+    /*로고는 이미지라 인라인 블록이니까 마진 오토 안됨 블록요소만 됨 */
+    display: block;
+    margin :50px auto;
+}
+
+.member .field{
+    margin :5px 0; /*상하로 좀 띄워주기*/
+}
+
+.member b{
+    /* border: 1px solid #000; */
+    display: block; /*수직 정렬하기 */
+    margin-bottom: 5px;
+}
+
+/*input 중 radio 는 width 가 100%면 안되니까 */
+.member input:not(input[type=radio]),.member select{
+    border: 1px solid #dadada;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.member input[type=button],
+.member input[type=submit]{
+background-color: #ed1257;
+color:#fff
+}
+
+.member input:focus, .member select:focus{
+    border: 1px solid #ed1257;
+}
+
+.field.birth div{ /*field 이면서 birth*/
+    display: flex;
+    gap:10px; /*간격 벌려줄때 공식처럼 사용핟나 */
+}
+
+/* .field.birth div > * {  gap 사용한거랑 같은 효과를 줌 
+    flex:1;
+} */
+
+.field.tel-number div {
+    display: flex;
+}
+
+.field.tel-number div input:nth-child(1){
+    flex:2;
+}
+
+.field.tel-number div input:nth-child(2){
+    flex:1;
+}
+
+.field.gender div{
+    border: 1px solid #dadada;
+    padding: 15px 5px;
+    background-color: #fff;
+}
+
+.placehold-text{
+    display: block; /*span 으로 감싸서 크기영역을 블록요소로 만들어ㅜ저야한다*/
+    position:relative;
+    /* border: 1px solid #000; */
+}
+
+.placehold-text:before{ 
+    content : "@yogiyo.com";
+    position:absolute; /*before은 inline 요소이기 때문에 span으로 감싸줌 */
+    right : 20px;
+    top:13px;
+    pointer-events: none; /*자체가 가지고 있는 pointer event 를 없애준다 */
+}
+
+.userpw{
+    background:url(./images/images2/icon-01.png) no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}
+
+.userpw-confirm{
+    background:url(./images/images2/icon-02.png) no-repeat center right 15px;
+    background-size: 20px;
+    background-color: #fff;
+}

@@ -1,0 +1,33 @@
+.subj2{
+    width:100%;
+    height:400px;
+    background-color: rgb(207, 201, 201);
+}
+.me02{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100px;
+    background-color:azure;
+    border:0.1px solid gray;
+}
+.me02>p{
+    margin-left: 30px;
+}
+.sumCss{
+    border:0.1px solid gray;
+    height:60px;
+    text-align: center;
+    line-height:60px;
+    cursor: pointer;
+}
+#ee11{
+    font-size:10px;
+}
+.me02>img{
+    width:110px;
+    height: 110px;
+    position: relative;
+    left:470px;
+    bottom:100px;
+}

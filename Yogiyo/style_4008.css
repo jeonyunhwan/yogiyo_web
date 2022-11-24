@@ -1,0 +1,187 @@
+*{
+    list-style:none;
+    text-decoration:none;
+    border-collapse:collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+.header{
+    display:flex;
+    width:100%;
+    height:100px;
+    margin:auto;
+    background:rgb(219, 27, 50);
+
+}
+.logo{
+    width:300px;
+    height: 40px;
+    margin-left:200px;
+    margin-top:25px;;
+    font-size:40px;
+    color:white;
+}
+.nav{
+    display:flex;
+    margin-left: 400px;
+}
+.nav > li > ul {
+    display:none;
+    position: absolute;
+    background-color:rgb(219, 27, 50);
+    border-radius: 0.5em;
+    border:1px solid white;
+    width:150px;
+}
+.nav > li > ul > li > a{
+    color:white;
+}
+
+.nav > li:hover > ul {
+    display:block;
+}
+.nav>li{
+    margin-top: 25px;
+    height:50px;
+    width:150px;
+    text-align: center;
+    line-height:50px;
+    background-color: rgb(219, 27, 50);
+    border-radius: 0.5em;
+    border:1px solid white;
+    margin-left:20px;
+}
+#s{
+    background-color: rgb(234, 94, 25);
+}
+.nav> li > a{
+    color:white;
+    font-size: 20px;  
+}
+#s2{
+    position: relative;
+    font-size:20px;
+    color: white;
+    line-height:90px;
+    left:120px;
+}
+.logo > #s1 {
+    color:white
+}
+.JJIMbox{
+    width:50%;
+    height:700px;
+    border: 0.1px solid gray;
+    margin: auto;
+    overflow: auto;
+    white-space:nowrap;
+}
+.JJIMbox > #logo2{
+    width:100%;
+    height:120px;
+    border: 0.1px solid gray;
+}
+.JJIMbox > #logo2 > #s3{
+    position: relative;
+    top:60px;
+    text-align: center;
+    font-size:50px;
+    color : rgb(9, 9, 9);
+}
+
+.box{
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    border:0.1px solid black;
+    width:100%;
+    height:150px;
+}
+.box >.dd > img{
+    width:120px;
+    height:120px; 
+}
+.box > .dd {
+    position: relative;
+    left:15px;
+    top:15px;
+    width:120px;
+    height:120px;
+    border: 0.1px solid black;
+}
+.dd1 > h2{
+    position: relative;
+    bottom:10px;
+}
+.dd1 > .p01{
+    color :rgb(234, 94, 25);
+
+}
+.dd1 > .p02{
+    color : gray;
+}
+.dd1 > .p03{
+    color :rgb(240, 12, 111);
+    font-size:10px;
+}
+.dd1 > .p04{
+    color :rgb(171, 168, 168);
+}
+.box > .dd1{
+    position: relative;
+    left : 40px;
+    top: 30px;
+}
+.box > h3{
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+    top:20px;
+    left:200px;
+    color:rgb(240, 12, 111);
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    margin-top: 1em;
+    padding-top: .5em;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination li {
+    margin: 0 1px;
+}
+
+.pagination a {
+    display: block;
+    padding: .5em 1em;
+    border: 1px solid #999;
+    border-radius: .2em;
+    text-decoration: none;
+}
+
+.pagination a[aria-current="page"] {
+    background-color:rgb(240, 12, 111);;
+    color: #fff;
+}
